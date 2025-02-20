@@ -1,0 +1,1 @@
+sourceset_dependencies='{":portal-android/debug":[],":portal-android/main":[],":portal-android/release":[]}'

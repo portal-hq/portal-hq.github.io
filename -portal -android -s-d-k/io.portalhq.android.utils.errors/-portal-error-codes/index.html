@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PortalErrorCodes</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Portal Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":portal-android/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":portal-android/release"
+                                       data-filter=":portal-android/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Portal Android SDK
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Portal Android SDK::io.portalhq.android.utils.errors/PortalErrorCodes///PointingToDeclaration//1908257177">
+  <div class="breadcrumbs"><a href="../../../index.html">Portal Android SDK</a><span class="delimiter">/</span><a href="../index.html">io.portalhq.android.utils.errors</a><span class="delimiter">/</span><span class="current">PortalErrorCodes</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Portal</span><wbr></wbr><span>Error</span><wbr></wbr><span><span>Codes</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">PortalErrorCodes</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">PortalErrorCodes</a><span class="token operator">&gt; </span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="364330201%2FClasslikes%2F1908257177" anchor-label="INVALID_RANK_AND_THRESHOLD" id="364330201%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-v-a-l-i-d_-r-a-n-k_-a-n-d_-t-h-r-e-s-h-o-l-d/index.html">INVALID_RANK_AND_THRESHOLD</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="364330201%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-i-n-v-a-l-i-d_-r-a-n-k_-a-n-d_-t-h-r-e-s-h-o-l-d/index.html">INVALID_RANK_AND_THRESHOLD</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1370449064%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_START_DKG" id="1370449064%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-d-k-g/index.html">FAILED_TO_START_DKG</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1370449064%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-d-k-g/index.html">FAILED_TO_START_DKG</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1920611447%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_FINISH_DKG" id="1920611447%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-d-k-g/index.html">FAILED_TO_FINISH_DKG</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1920611447%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-d-k-g/index.html">FAILED_TO_FINISH_DKG</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1567621707%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CONVERT_DKG_RESULT" id="1567621707%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-d-k-g_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_DKG_RESULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1567621707%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-d-k-g_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_DKG_RESULT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1031518836%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_START_RESHARE" id="1031518836%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-r-e-s-h-a-r-e/index.html">FAILED_TO_START_RESHARE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1031518836%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-r-e-s-h-a-r-e/index.html">FAILED_TO_START_RESHARE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1504447171%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_FINISH_RESHARE" id="1504447171%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-r-e-s-h-a-r-e/index.html">FAILED_TO_FINISH_RESHARE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1504447171%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-r-e-s-h-a-r-e/index.html">FAILED_TO_FINISH_RESHARE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="69611391%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CONVERT_RESHARE_RESULT" id="69611391%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-r-e-s-h-a-r-e_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_RESHARE_RESULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="69611391%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-r-e-s-h-a-r-e_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_RESHARE_RESULT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1298748771%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_START_SIGN" id="-1298748771%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-s-i-g-n/index.html">FAILED_TO_START_SIGN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1298748771%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-s-t-a-r-t_-s-i-g-n/index.html">FAILED_TO_START_SIGN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1423584082%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_FINISH_SIGN" id="-1423584082%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-s-i-g-n/index.html">FAILED_TO_FINISH_SIGN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1423584082%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-f-i-n-i-s-h_-s-i-g-n/index.html">FAILED_TO_FINISH_SIGN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-377162632%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CONVERT_SIGN_RESULT" id="-377162632%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-s-i-g-n_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_SIGN_RESULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-377162632%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-s-i-g-n_-r-e-s-u-l-t/index.html">FAILED_TO_CONVERT_SIGN_RESULT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1366704416%2FClasslikes%2F1908257177" anchor-label="DKG_PROCESS_ERROR" id="-1366704416%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-k-g_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">DKG_PROCESS_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1366704416%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-d-k-g_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">DKG_PROCESS_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1268318774%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_PARSE_SOCKET_MESSAGE" id="-1268318774%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-p-a-r-s-e_-s-o-c-k-e-t_-m-e-s-s-a-g-e/index.html">FAILED_TO_PARSE_SOCKET_MESSAGE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1268318774%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-p-a-r-s-e_-s-o-c-k-e-t_-m-e-s-s-a-g-e/index.html">FAILED_TO_PARSE_SOCKET_MESSAGE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="237964856%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_ADD_MESSAGE_TO_CHANNEL" id="237964856%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-a-d-d_-m-e-s-s-a-g-e_-t-o_-c-h-a-n-n-e-l/index.html">FAILED_TO_ADD_MESSAGE_TO_CHANNEL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="237964856%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-a-d-d_-m-e-s-s-a-g-e_-t-o_-c-h-a-n-n-e-l/index.html">FAILED_TO_ADD_MESSAGE_TO_CHANNEL</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2071620141%2FClasslikes%2F1908257177" anchor-label="REFRESH_SHARE_MISMATCH" id="-2071620141%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-r-e-s-h_-s-h-a-r-e_-m-i-s-m-a-t-c-h/index.html">REFRESH_SHARE_MISMATCH</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2071620141%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-r-e-f-r-e-s-h_-s-h-a-r-e_-m-i-s-m-a-t-c-h/index.html">REFRESH_SHARE_MISMATCH</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-497917189%2FClasslikes%2F1908257177" anchor-label="REFRESH_PROCESS_ERROR" id="-497917189%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-r-e-s-h_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">REFRESH_PROCESS_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-497917189%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-r-e-f-r-e-s-h_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">REFRESH_PROCESS_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-95197270%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_GET_PAILLIER_KEY" id="-95197270%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-g-e-t_-p-a-i-l-l-i-e-r_-k-e-y/index.html">FAILED_TO_GET_PAILLIER_KEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95197270%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-g-e-t_-p-a-i-l-l-i-e-r_-k-e-y/index.html">FAILED_TO_GET_PAILLIER_KEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1378129897%2FClasslikes%2F1908257177" anchor-label="SIGNING_SHARE_MISMATCH" id="1378129897%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-i-g-n-i-n-g_-s-h-a-r-e_-m-i-s-m-a-t-c-h/index.html">SIGNING_SHARE_MISMATCH</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1378129897%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-s-i-g-n-i-n-g_-s-h-a-r-e_-m-i-s-m-a-t-c-h/index.html">SIGNING_SHARE_MISMATCH</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1772108251%2FClasslikes%2F1908257177" anchor-label="SIGNING_PROCESS_ERROR" id="-1772108251%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-i-g-n-i-n-g_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">SIGNING_PROCESS_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1772108251%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-s-i-g-n-i-n-g_-p-r-o-c-e-s-s_-e-r-r-o-r/index.html">SIGNING_PROCESS_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-568417783%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_SEND_SIGN_REQUEST" id="-568417783%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-s-e-n-d_-s-i-g-n_-r-e-q-u-e-s-t/index.html">FAILED_TO_SEND_SIGN_REQUEST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-568417783%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-s-e-n-d_-s-i-g-n_-r-e-q-u-e-s-t/index.html">FAILED_TO_SEND_SIGN_REQUEST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1380172388%2FClasslikes%2F1908257177" anchor-label="BAD_REQUEST" id="-1380172388%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-a-d_-r-e-q-u-e-s-t/index.html">BAD_REQUEST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1380172388%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-b-a-d_-r-e-q-u-e-s-t/index.html">BAD_REQUEST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-547657895%2FClasslikes%2F1908257177" anchor-label="INVALID_API_KEY" id="-547657895%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-v-a-l-i-d_-a-p-i_-k-e-y/index.html">INVALID_API_KEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-547657895%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-i-n-v-a-l-i-d_-a-p-i_-k-e-y/index.html">INVALID_API_KEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-659936931%2FClasslikes%2F1908257177" anchor-label="NOT_FOUND" id="-659936931%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-o-t_-f-o-u-n-d/index.html">NOT_FOUND</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-659936931%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-n-o-t_-f-o-u-n-d/index.html">NOT_FOUND</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1788523242%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_RECEIVE_101_STATUS_CODE" id="-1788523242%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-r-e-c-e-i-v-e_101_-s-t-a-t-u-s_-c-o-d-e/index.html">FAILED_TO_RECEIVE_101_STATUS_CODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1788523242%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-r-e-c-e-i-v-e_101_-s-t-a-t-u-s_-c-o-d-e/index.html">FAILED_TO_RECEIVE_101_STATUS_CODE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="666012263%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CREATE_WEBSOCKET" id="666012263%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-w-e-b-s-o-c-k-e-t/index.html">FAILED_TO_CREATE_WEBSOCKET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="666012263%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-w-e-b-s-o-c-k-e-t/index.html">FAILED_TO_CREATE_WEBSOCKET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-762768609%2FClasslikes%2F1908257177" anchor-label="DKG_NETWORK_ERROR" id="-762768609%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-k-g_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">DKG_NETWORK_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-762768609%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-d-k-g_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">DKG_NETWORK_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1340481022%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_READ_PARTIAL_PUBLIC_KEY_FROM_SOCKET" id="1340481022%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-f-r-o-m_-s-o-c-k-e-t/index.html">FAILED_TO_READ_PARTIAL_PUBLIC_KEY_FROM_SOCKET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1340481022%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-f-r-o-m_-s-o-c-k-e-t/index.html">FAILED_TO_READ_PARTIAL_PUBLIC_KEY_FROM_SOCKET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-357226430%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_WRITE_PARTIAL_PUBLIC_KEY_TO_SOCKET" id="-357226430%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-w-r-i-t-e_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-t-o_-s-o-c-k-e-t/index.html">FAILED_TO_WRITE_PARTIAL_PUBLIC_KEY_TO_SOCKET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-357226430%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-w-r-i-t-e_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-t-o_-s-o-c-k-e-t/index.html">FAILED_TO_WRITE_PARTIAL_PUBLIC_KEY_TO_SOCKET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1149979940%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_READ_FROM_SOCKET_IN_LISTEN" id="1149979940%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-f-r-o-m_-s-o-c-k-e-t_-i-n_-l-i-s-t-e-n/index.html">FAILED_TO_READ_FROM_SOCKET_IN_LISTEN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1149979940%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-f-r-o-m_-s-o-c-k-e-t_-i-n_-l-i-s-t-e-n/index.html">FAILED_TO_READ_FROM_SOCKET_IN_LISTEN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="106018618%2FClasslikes%2F1908257177" anchor-label="REFRESH_NETWORK_ERROR" id="106018618%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-r-e-s-h_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">REFRESH_NETWORK_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="106018618%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-r-e-f-r-e-s-h_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">REFRESH_NETWORK_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1168172444%2FClasslikes%2F1908257177" anchor-label="SIGNING_NETWORK_ERROR" id="-1168172444%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-i-g-n-i-n-g_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">SIGNING_NETWORK_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1168172444%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-s-i-g-n-i-n-g_-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">SIGNING_NETWORK_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-304416488%2FClasslikes%2F1908257177" anchor-label="BLOCKED_ADDRESS_BY_DEFAULT" id="-304416488%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-l-o-c-k-e-d_-a-d-d-r-e-s-s_-b-y_-d-e-f-a-u-l-t/index.html">BLOCKED_ADDRESS_BY_DEFAULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-304416488%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-b-l-o-c-k-e-d_-a-d-d-r-e-s-s_-b-y_-d-e-f-a-u-l-t/index.html">BLOCKED_ADDRESS_BY_DEFAULT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="875544554%2FClasslikes%2F1908257177" anchor-label="BLOCKED_ADDRESS_BY_ENVIRONMENT" id="875544554%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-l-o-c-k-e-d_-a-d-d-r-e-s-s_-b-y_-e-n-v-i-r-o-n-m-e-n-t/index.html">BLOCKED_ADDRESS_BY_ENVIRONMENT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="875544554%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-b-l-o-c-k-e-d_-a-d-d-r-e-s-s_-b-y_-e-n-v-i-r-o-n-m-e-n-t/index.html">BLOCKED_ADDRESS_BY_ENVIRONMENT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="580814827%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_COMPUTE_ETH_ADDRESS" id="580814827%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-m-p-u-t-e_-e-t-h_-a-d-d-r-e-s-s/index.html">FAILED_TO_COMPUTE_ETH_ADDRESS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="580814827%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-m-p-u-t-e_-e-t-h_-a-d-d-r-e-s-s/index.html">FAILED_TO_COMPUTE_ETH_ADDRESS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2033496615%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CREATE_SHARE_OBJECT" id="2033496615%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-s-h-a-r-e_-o-b-j-e-c-t/index.html">FAILED_TO_CREATE_SHARE_OBJECT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2033496615%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-s-h-a-r-e_-o-b-j-e-c-t/index.html">FAILED_TO_CREATE_SHARE_OBJECT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="210652793%2FClasslikes%2F1908257177" anchor-label="INCORRECT_INPUT_TO_SIGN" id="210652793%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-c-o-r-r-e-c-t_-i-n-p-u-t_-t-o_-s-i-g-n/index.html">INCORRECT_INPUT_TO_SIGN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="210652793%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-i-n-c-o-r-r-e-c-t_-i-n-p-u-t_-t-o_-s-i-g-n/index.html">INCORRECT_INPUT_TO_SIGN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-216822876%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CONVERT_PUBLIC_KEY_BYTES" id="-216822876%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-p-u-b-l-i-c_-k-e-y_-b-y-t-e-s/index.html">FAILED_TO_CONVERT_PUBLIC_KEY_BYTES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-216822876%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-p-u-b-l-i-c_-k-e-y_-b-y-t-e-s/index.html">FAILED_TO_CONVERT_PUBLIC_KEY_BYTES</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-881330635%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_COMPUTE_SIGNATURE" id="-881330635%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-m-p-u-t-e_-s-i-g-n-a-t-u-r-e/index.html">FAILED_TO_COMPUTE_SIGNATURE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-881330635%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-m-p-u-t-e_-s-i-g-n-a-t-u-r-e/index.html">FAILED_TO_COMPUTE_SIGNATURE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1555579485%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_PARSE_INPUT_SHARE_OBJECT" id="-1555579485%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-p-a-r-s-e_-i-n-p-u-t_-s-h-a-r-e_-o-b-j-e-c-t/index.html">FAILED_TO_PARSE_INPUT_SHARE_OBJECT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1555579485%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-p-a-r-s-e_-i-n-p-u-t_-s-h-a-r-e_-o-b-j-e-c-t/index.html">FAILED_TO_PARSE_INPUT_SHARE_OBJECT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1261934535%2FClasslikes%2F1908257177" anchor-label="INCORRECT_SHARE_OBJECT_TYPE" id="1261934535%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-c-o-r-r-e-c-t_-s-h-a-r-e_-o-b-j-e-c-t_-t-y-p-e/index.html">INCORRECT_SHARE_OBJECT_TYPE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261934535%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-i-n-c-o-r-r-e-c-t_-s-h-a-r-e_-o-b-j-e-c-t_-t-y-p-e/index.html">INCORRECT_SHARE_OBJECT_TYPE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="561547699%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CONVERT_STRING_TO_BIG_INT" id="561547699%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-s-t-r-i-n-g_-t-o_-b-i-g_-i-n-t/index.html">FAILED_TO_CONVERT_STRING_TO_BIG_INT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="561547699%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-o-n-v-e-r-t_-s-t-r-i-n-g_-t-o_-b-i-g_-i-n-t/index.html">FAILED_TO_CONVERT_STRING_TO_BIG_INT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1157622036%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_POPULATE_TRANSACTION" id="-1157622036%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-p-o-p-u-l-a-t-e_-t-r-a-n-s-a-c-t-i-o-n/index.html">FAILED_TO_POPULATE_TRANSACTION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1157622036%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-p-o-p-u-l-a-t-e_-t-r-a-n-s-a-c-t-i-o-n/index.html">FAILED_TO_POPULATE_TRANSACTION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="424791227%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_BUILD_MESSAGE" id="424791227%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-b-u-i-l-d_-m-e-s-s-a-g-e/index.html">FAILED_TO_BUILD_MESSAGE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="424791227%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-b-u-i-l-d_-m-e-s-s-a-g-e/index.html">FAILED_TO_BUILD_MESSAGE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1331212306%2FClasslikes%2F1908257177" anchor-label="UNSUPPORTED_ETH_METHOD" id="1331212306%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-s-u-p-p-o-r-t-e-d_-e-t-h_-m-e-t-h-o-d/index.html">UNSUPPORTED_ETH_METHOD</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1331212306%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-u-n-s-u-p-p-o-r-t-e-d_-e-t-h_-m-e-t-h-o-d/index.html">UNSUPPORTED_ETH_METHOD</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-965635278%2FClasslikes%2F1908257177" anchor-label="NODE_RPC_ERROR" id="-965635278%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-o-d-e_-r-p-c_-e-r-r-o-r/index.html">NODE_RPC_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-965635278%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-n-o-d-e_-r-p-c_-e-r-r-o-r/index.html">NODE_RPC_ERROR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1492340547%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_INITIALIZE_PUBLIC_KEY" id="-1492340547%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-i-n-i-t-i-a-l-i-z-e_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_INITIALIZE_PUBLIC_KEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1492340547%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-i-n-i-t-i-a-l-i-z-e_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_INITIALIZE_PUBLIC_KEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="645486280%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CALCULATE_SELF_PUBLIC_KEY" id="645486280%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-a-l-c-u-l-a-t-e_-s-e-l-f_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_CALCULATE_SELF_PUBLIC_KEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="645486280%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-a-l-c-u-l-a-t-e_-s-e-l-f_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_CALCULATE_SELF_PUBLIC_KEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-614348307%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_UNMARSHAL_PARTIAL_PUBLIC_KEY_FROM_SOCKET" id="-614348307%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-u-n-m-a-r-s-h-a-l_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-f-r-o-m_-s-o-c-k-e-t/index.html">FAILED_TO_UNMARSHAL_PARTIAL_PUBLIC_KEY_FROM_SOCKET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-614348307%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-u-n-m-a-r-s-h-a-l_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y_-f-r-o-m_-s-o-c-k-e-t/index.html">FAILED_TO_UNMARSHAL_PARTIAL_PUBLIC_KEY_FROM_SOCKET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1985187861%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_MARSHAL_PARTIAL_PUBLIC_KEY" id="-1985187861%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-m-a-r-s-h-a-l_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_MARSHAL_PARTIAL_PUBLIC_KEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1985187861%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-m-a-r-s-h-a-l_-p-a-r-t-i-a-l_-p-u-b-l-i-c_-k-e-y/index.html">FAILED_TO_MARSHAL_PARTIAL_PUBLIC_KEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-875301662%2FClasslikes%2F1908257177" anchor-label="UNSUPPORTED_MPC_PROTOCOL" id="-875301662%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-s-u-p-p-o-r-t-e-d_-m-p-c_-p-r-o-t-o-c-o-l/index.html">UNSUPPORTED_MPC_PROTOCOL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-875301662%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-u-n-s-u-p-p-o-r-t-e-d_-m-p-c_-p-r-o-t-o-c-o-l/index.html">UNSUPPORTED_MPC_PROTOCOL</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1582679454%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CREATE_RANDOM_DEK_BYTES" id="-1582679454%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-r-a-n-d-o-m_-d-e-k_-b-y-t-e-s/index.html">FAILED_TO_CREATE_RANDOM_DEK_BYTES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1582679454%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-r-a-n-d-o-m_-d-e-k_-b-y-t-e-s/index.html">FAILED_TO_CREATE_RANDOM_DEK_BYTES</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="248079905%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CREATE_CIPHER_BLOCK" id="248079905%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-c-i-p-h-e-r_-b-l-o-c-k/index.html">FAILED_TO_CREATE_CIPHER_BLOCK</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="248079905%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-c-i-p-h-e-r_-b-l-o-c-k/index.html">FAILED_TO_CREATE_CIPHER_BLOCK</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="612024577%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_CREATE_GCM_CIPHER" id="612024577%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-g-c-m_-c-i-p-h-e-r/index.html">FAILED_TO_CREATE_GCM_CIPHER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="612024577%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-c-r-e-a-t-e_-g-c-m_-c-i-p-h-e-r/index.html">FAILED_TO_CREATE_GCM_CIPHER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-760254551%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_READ_NONCE_INTO_BUFFER" id="-760254551%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-n-o-n-c-e_-i-n-t-o_-b-u-f-f-e-r/index.html">FAILED_TO_READ_NONCE_INTO_BUFFER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-760254551%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-r-e-a-d_-n-o-n-c-e_-i-n-t-o_-b-u-f-f-e-r/index.html">FAILED_TO_READ_NONCE_INTO_BUFFER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1986657035%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_DECODE_KEY_HEX_STRING" id="1986657035%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-d-e-c-o-d-e_-k-e-y_-h-e-x_-s-t-r-i-n-g/index.html">FAILED_TO_DECODE_KEY_HEX_STRING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1986657035%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-d-e-c-o-d-e_-k-e-y_-h-e-x_-s-t-r-i-n-g/index.html">FAILED_TO_DECODE_KEY_HEX_STRING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1895129275%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_DECODE_CIPHER_HEX_STRING" id="1895129275%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-d-e-c-o-d-e_-c-i-p-h-e-r_-h-e-x_-s-t-r-i-n-g/index.html">FAILED_TO_DECODE_CIPHER_HEX_STRING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1895129275%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-d-e-c-o-d-e_-c-i-p-h-e-r_-h-e-x_-s-t-r-i-n-g/index.html">FAILED_TO_DECODE_CIPHER_HEX_STRING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1906737507%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_GET_NONCE_SIZE" id="-1906737507%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-g-e-t_-n-o-n-c-e_-s-i-z-e/index.html">FAILED_TO_GET_NONCE_SIZE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906737507%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-g-e-t_-n-o-n-c-e_-s-i-z-e/index.html">FAILED_TO_GET_NONCE_SIZE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1125794144%2FClasslikes%2F1908257177" anchor-label="FAILED_TO_DECRYPT_CIPHER" id="1125794144%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-i-l-e-d_-t-o_-d-e-c-r-y-p-t_-c-i-p-h-e-r/index.html">FAILED_TO_DECRYPT_CIPHER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1125794144%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><div class="block"><a href="-f-a-i-l-e-d_-t-o_-d-e-c-r-y-p-t_-c-i-p-h-e-r/index.html">FAILED_TO_DECRYPT_CIPHER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="729279298%2FProperties%2F1908257177" anchor-label="code" id="729279298%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="code.html"><span><span>code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="729279298%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="code.html">code</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="727938843%2FProperties%2F1908257177" anchor-label="entries" id="727938843%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entries.html"><span><span>entries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="727938843%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.enums/-enum-entries/index.html">EnumEntries</a><span class="token operator">&lt;</span><a href="index.html">PortalErrorCodes</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a representation of an immutable list of all enum entries, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-372974862%2FProperties%2F1908257177" anchor-label="name" id="-372974862%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.portalhq.android.utils.http.data/-http-method-type/-d-e-l-e-t-e/index.html#-372974862%2FProperties%2F1908257177"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../io.portalhq.android.utils.http.data/-http-method-type/-d-e-l-e-t-e/index.html#-372974862%2FProperties%2F1908257177">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F1908257177" anchor-label="ordinal" id="-739389684%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../io.portalhq.android.utils.http.data/-http-method-type/-d-e-l-e-t-e/index.html#-739389684%2FProperties%2F1908257177"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../io.portalhq.android.utils.http.data/-http-method-type/-d-e-l-e-t-e/index.html#-739389684%2FProperties%2F1908257177">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1771697567%2FFunctions%2F1908257177" anchor-label="valueOf" id="-1771697567%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771697567%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">PortalErrorCodes</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1853545171%2FFunctions%2F1908257177" anchor-label="values" id="-1853545171%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1853545171%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">PortalErrorCodes</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) Portal</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
