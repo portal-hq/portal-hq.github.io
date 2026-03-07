@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>getPrice</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Portal Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":portal-android/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":portal-android/release"
+                                       data-filter=":portal-android/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Portal Android SDK
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Portal Android SDK::io.portalhq.android.trading/ZeroX/getPrice/#io.portalhq.android.api.data.zerox.ZeroXPriceRequest#kotlin.String?/PointingToDeclaration//1908257177">
+  <div class="breadcrumbs"><a href="../../../index.html">Portal Android SDK</a><span class="delimiter">/</span><a href="../index.html">io.portalhq.android.trading</a><span class="delimiter">/</span><a href="index.html">ZeroX</a><span class="delimiter">/</span><span class="current">getPrice</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>get</span><wbr></wbr><span><span>Price</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-price.html"><span class="token function">getPrice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../io.portalhq.android.api.data.zerox/-zero-x-price-request/index.html">ZeroXPriceRequest</a><span class="token punctuation">, </span></span><span class="parameter ">zeroXApiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="../../io.portalhq.android.api.data.zerox/-zero-x-price-response/index.html">ZeroXPriceResponse</a><span class="token operator">&gt;</span></div><p class="paragraph">Retrieves a price quote without transaction data.</p><p class="paragraph">This method fetches a price quote for a swap without generating transaction data. This is useful for:</p><ul><li><p class="paragraph">Checking swap prices before committing to a transaction</p></li><li><p class="paragraph">Displaying price information to users</p></li><li><p class="paragraph">Comparing prices across different swap sources</p></li></ul><p class="paragraph">Unlike <code class="lang-kotlin">getQuote()</code>, this method does not return transaction data. The response includes price information, fees breakdown, and liquidity availability.</p><p class="paragraph">The ZeroX API key can be configured in two ways:</p><ol><li><p class="paragraph"><strong>Portal Dashboard</strong> (Recommended): Configure your ZeroX API key in the Portal Dashboard. The SDK will use it automatically when <code class="lang-kotlin">zeroXApiKey</code> is <code class="lang-kotlin">null</code>.</p></li><li><p class="paragraph"><strong>Per-Request Override</strong>: Provide the API key in the <code class="lang-kotlin">zeroXApiKey</code> parameter to override the Dashboard configuration for this specific request.</p></li></ol><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">A <code class="lang-kotlin">Result</code> containing <code class="lang-kotlin">ZeroXPriceResponse</code> with the price data, including buy/sell amounts, price, gas estimates, fees breakdown, and liquidity availability. The response can be accessed via <code class="lang-kotlin">result.getOrNull()?.data?.rawResponse?.buyAmount</code> for the buy amount, or <code class="lang-kotlin">result.getOrNull()?.data?.rawResponse?.gas</code> for gas estimates.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>request</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The price request parameters containing chain ID, tokens, amounts, and optional swap configuration. Use <a href="../../io.portalhq.android.api.data.zerox/-zero-x-price-request/-companion/create.html">ZeroXPriceRequest.create</a> for convenience, which handles Boolean to String conversion for <code class="lang-kotlin">sellEntireBalance</code>.</p><ul><li><p class="paragraph">Note: The <code class="lang-kotlin">chainId</code> in the request is included in the request body.</p></li></ul></div></div></div></div><div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>zero</span><wbr></wbr><span>XApi</span><wbr></wbr><span><span>Key</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Optional ZeroX API key to override the one configured in Portal Dashboard.</p><ul><li><p class="paragraph">If <code class="lang-kotlin">null</code>: The SDK will use the API key configured in the Portal Dashboard.</p></li><li><p class="paragraph">If provided: This API key will be used for this request, overriding the Dashboard configuration.</p></li><li><p class="paragraph">The API key is used to authenticate requests to the ZeroX API service and is included in the request body.</p></li></ul></div></div></div></div></div><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-exception/index.html"><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if the URL cannot be constructed, or network/decoding errors if the request fails.</p></div></div></div></div></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) Portal</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
