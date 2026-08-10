@@ -108,24 +108,24 @@
   <div class="breadcrumbs"><a href="../../../../../index.html">Portal Android SDK</a><span class="delimiter">/</span><a href="../../../index.html">io.portalhq.android.exceptions</a><span class="delimiter">/</span><a href="../../index.html">PortalException</a><span class="delimiter">/</span><a href="../index.html">Api</a><span class="delimiter">/</span><span class="current">HttpRequestFailed</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Http</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Failed</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">HttpRequestFailed</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../index.html">PortalException.Api</a></div><p class="paragraph">Thrown when an HTTP request fails with a non-success status code.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">HttpRequestFailed</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>statusCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../index.html">PortalException.Api</a></div><p class="paragraph">Thrown when an HTTP request fails with a non-success status code other than 400 (which throws <a href="../-http-bad-request/index.html">HttpBadRequest</a>) or 401 (which throws <a href="../-http-unauthorized/index.html">HttpUnauthorized</a>). Covers 4xx ≥ 402, all 5xx, and unknown status codes.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="4521789%2FConstructors%2F1908257177" anchor-label="HttpRequestFailed" id="4521789%2FConstructors%2F1908257177" data-filterable-set=":portal-android/release"></a>
+        <div class="table"><a data-name="1878470883%2FConstructors%2F1908257177" anchor-label="HttpRequestFailed" id="1878470883%2FConstructors%2F1908257177" data-filterable-set=":portal-android/release"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-http-request-failed.html"><span>Http</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Failed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="4521789%2FConstructors%2F1908257177"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1878470883%2FConstructors%2F1908257177"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">statusCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -138,13 +138,13 @@
           <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../../../io.portalhq.android.utils.errors/-mpc-error/index.html#-654012527%2FProperties%2F1908257177"><span><span>cause</span></span></a></div>
+                  <div><a href="../../../../io.portalhq.android.yield/-yield-xyz-action-exception/-api-error/index.html#-654012527%2FProperties%2F1908257177"><span><span>cause</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-654012527%2FProperties%2F1908257177"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="../../../../io.portalhq.android.utils.errors/-mpc-error/index.html#-654012527%2FProperties%2F1908257177">cause</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="../../../../io.portalhq.android.yield/-yield-xyz-action-exception/-api-error/index.html#-654012527%2FProperties%2F1908257177">cause</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -153,13 +153,28 @@
           <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../../../io.portalhq.android.utils.errors/-mpc-error/index.html#1824300659%2FProperties%2F1908257177"><span><span>message</span></span></a></div>
+                  <div><a href="../../../../io.portalhq.android.yield/-yield-xyz-action-exception/-api-error/index.html#1824300659%2FProperties%2F1908257177"><span><span>message</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1824300659%2FProperties%2F1908257177"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="../../../../io.portalhq.android.utils.errors/-mpc-error/index.html#1824300659%2FProperties%2F1908257177">message</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="../../../../io.portalhq.android.yield/-yield-xyz-action-exception/-api-error/index.html#1824300659%2FProperties%2F1908257177">message</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1742962983%2FProperties%2F1908257177" anchor-label="statusCode" id="-1742962983%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="status-code.html"><span>status</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1742962983%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="status-code.html">statusCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">The HTTP status code that produced this failure, when known. Populated by <span data-unresolved-link="io.portalhq.android.utils.extensions//toTextResponse/java.net.HttpURLConnection#kotlin.Boolean/PointingToDeclaration/">io.portalhq.android.utils.extensions.toTextResponse</span> for real HTTP responses (null for synthesized failures such as a 200 body that carried an error envelope, or when no valid HTTP response was received). Callers can branch on this to distinguish transient server-side (5xx) failures from terminal 4xx failures.</p></div></div></div>
                 </div>
               </div>
             </div>

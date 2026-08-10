@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.portalhq.android.api.data.noah</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Portal Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":portal-android/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":portal-android/release"
+                                       data-filter=":portal-android/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Portal Android SDK
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Portal Android SDK::io.portalhq.android.api.data.noah////PointingToDeclaration//1908257177">
+  <div class="breadcrumbs"><a href="../../index.html">Portal Android SDK</a><span class="delimiter">/</span><span class="current">io.portalhq.android.api.data.noah</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="278411705%2FClasslikes%2F1908257177" anchor-label="NoahAccountHolderDetails" id="278411705%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-account-holder-details/index.html"><span>Noah</span><wbr></wbr><span>Account</span><wbr></wbr><span>Holder</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="278411705%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-account-holder-details/index.html">NoahAccountHolderDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="-noah-person-name/index.html">NoahPersonName</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Information about the holder of a Noah payment method.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-671731683%2FClasslikes%2F1908257177" anchor-label="NoahAmountCondition" id="-671731683%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-amount-condition/index.html"><span>Noah</span><wbr></wbr><span>Amount</span><wbr></wbr><span><span>Condition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-671731683%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-amount-condition/index.html">NoahAmountCondition</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>comparisonOperator<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A single amount comparison condition for a deposit-source trigger.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1199502648%2FClasslikes%2F1908257177" anchor-label="NoahBankAddress" id="-1199502648%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-bank-address/index.html"><span>Noah</span><wbr></wbr><span>Bank</span><wbr></wbr><span><span>Address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1199502648%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-bank-address/index.html">NoahBankAddress</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>street<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>street2<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>city<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>postCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>state<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Bank address shape returned by Noah. Mirrors connect-api's <code class="lang-kotlin">NoahBankAddress</code> after the BFF's pascal-to-camel formatter (<code class="lang-kotlin">Street</code>/<code class="lang-kotlin">Street2</code>/<code class="lang-kotlin">City</code>/<code class="lang-kotlin">PostCode</code>/<code class="lang-kotlin">State</code>/<code class="lang-kotlin">Country</code>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-461125574%2FClasslikes%2F1908257177" anchor-label="NoahBankDetails" id="-461125574%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-bank-details/index.html"><span>Noah</span><wbr></wbr><span>Bank</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-461125574%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-bank-details/index.html">NoahBankDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>paymentMethodId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fee<span class="token operator">: </span><a href="-noah-fee-details/index.html">NoahFeeDetails</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountHolderName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankAddress<span class="token operator">: </span><a href="-noah-bank-address/index.html">NoahBankAddress</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reference<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>relatedPaymentMethods<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-bank-to-address-related-payment-method/index.html">NoahBankToAddressRelatedPaymentMethod</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Bank details returned by <a href="-noah-initiate-payin-response/index.html">NoahInitiatePayinResponse</a> used to fund the payin.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1796927719%2FClasslikes%2F1908257177" anchor-label="NoahBankToAddressRelatedPaymentMethod" id="1796927719%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-bank-to-address-related-payment-method/index.html"><span>Noah</span><wbr></wbr><span>Bank</span><wbr></wbr><span>To</span><wbr></wbr><span>Address</span><wbr></wbr><span>Related</span><wbr></wbr><span>Payment</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1796927719%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-bank-to-address-related-payment-method/index.html">NoahBankToAddressRelatedPaymentMethod</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>paymentMethodId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fee<span class="token operator">: </span><a href="-noah-fee-details/index.html">NoahFeeDetails</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>details<span class="token operator">: </span><a href="-noah-bank-to-address-related-payment-method-details/index.html">NoahBankToAddressRelatedPaymentMethodDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Related payment method tied to bank-to-address payin instructions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1131863335%2FClasslikes%2F1908257177" anchor-label="NoahBankToAddressRelatedPaymentMethodDetails" id="-1131863335%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-bank-to-address-related-payment-method-details/index.html"><span>Noah</span><wbr></wbr><span>Bank</span><wbr></wbr><span>To</span><wbr></wbr><span>Address</span><wbr></wbr><span>Related</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Method</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1131863335%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-bank-to-address-related-payment-method-details/index.html">NoahBankToAddressRelatedPaymentMethodDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>accountNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Optional details on a related payment method (account/bank identifiers).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-896533254%2FClasslikes%2F1908257177" anchor-label="NoahBusinessFee" id="-896533254%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-business-fee/index.html"><span>Noah</span><wbr></wbr><span>Business</span><wbr></wbr><span><span>Fee</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-896533254%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-business-fee/index.html">NoahBusinessFee</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>feeBase<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>feePct<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Optional business (partner) fee applied to a Noah payout or payin.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-698270275%2FClasslikes%2F1908257177" anchor-label="NoahChannel" id="-698270275%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-channel/index.html"><span>Noah</span><wbr></wbr><span><span>Channel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-698270275%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-channel/index.html">NoahChannel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodCategory<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>limits<span class="token operator">: </span><a href="-noah-channel-limits/index.html">NoahChannelLimits</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>processingSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>calculated<span class="token operator">: </span><a href="-noah-channel-calculated/index.html">NoahChannelCalculated</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethods<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-channel-payment-method-display/index.html">NoahChannelPaymentMethodDisplay</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>processingTier<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>formSchema<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>formMetadata<span class="token operator">: </span><a href="-noah-form-metadata/index.html">NoahFormMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>issuer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A Noah payout channel describing a way to off-ramp into fiat.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-842617185%2FClasslikes%2F1908257177" anchor-label="NoahChannelCalculated" id="-842617185%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-channel-calculated/index.html"><span>Noah</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>Calculated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-842617185%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-channel-calculated/index.html">NoahChannelCalculated</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>totalFee<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Server-calculated channel fee values for a given payout context.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2034924421%2FClasslikes%2F1908257177" anchor-label="NoahChannelLimits" id="2034924421%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-channel-limits/index.html"><span>Noah</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>Limits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2034924421%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-channel-limits/index.html">NoahChannelLimits</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>minLimit<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maxLimit<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Min/max amount limits for a payout channel, expressed in the channel's fiat currency.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="203395010%2FClasslikes%2F1908257177" anchor-label="NoahChannelPaymentMethodDisplay" id="203395010%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-channel-payment-method-display/index.html"><span>Noah</span><wbr></wbr><span>Channel</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Method</span><wbr></wbr><span><span>Display</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="203395010%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-channel-payment-method-display/index.html">NoahChannelPaymentMethodDisplay</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>details<span class="token operator">: </span><a href="-noah-payment-method-display-details/index.html">NoahPaymentMethodDisplayDetails</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountHolderDetails<span class="token operator">: </span><a href="-noah-account-holder-details/index.html">NoahAccountHolderDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>issuerDetails<span class="token operator">: </span><a href="-noah-issuer-details/index.html">NoahIssuerDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Display payload for a recent payment method attached to a channel.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1109399669%2FClasslikes%2F1908257177" anchor-label="NoahComparisonOperator" id="1109399669%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-comparison-operator/index.html"><span>Noah</span><wbr></wbr><span>Comparison</span><wbr></wbr><span><span>Operator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1109399669%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-noah-comparison-operator/index.html">NoahComparisonOperator</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-noah-comparison-operator/index.html">NoahComparisonOperator</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Comparison operator accepted by Noah's <code class="lang-kotlin">AmountCondition</code>. The BFF currently forwards this string to Noah unchanged; Noah accepts <code class="lang-kotlin">EQ</code>, <code class="lang-kotlin">LTEQ</code>, or <code class="lang-kotlin">GTEQ</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1071479594%2FClasslikes%2F1908257177" anchor-label="NoahCustomerType" id="1071479594%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-customer-type/index.html"><span>Noah</span><wbr></wbr><span>Customer</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1071479594%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-noah-customer-type/index.html">NoahCustomerType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-noah-customer-type/index.html">NoahCustomerType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Noah customer type. Validated server-side by <code class="lang-kotlin">isNoahCustomerType</code> in connect-api.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192576228%2FClasslikes%2F1908257177" anchor-label="NoahDepositSourceTriggerCondition" id="192576228%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-deposit-source-trigger-condition/index.html"><span>Noah</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Condition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192576228%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-deposit-source-trigger-condition/index.html">NoahDepositSourceTriggerCondition</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>amountConditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-amount-condition/index.html">NoahAmountCondition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>destinationAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Condition that must be met for the on-chain deposit to be picked up by Noah.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2019247034%2FClasslikes%2F1908257177" anchor-label="NoahFeeDetails" id="-2019247034%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-fee-details/index.html"><span>Noah</span><wbr></wbr><span>Fee</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2019247034%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-fee-details/index.html">NoahFeeDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>fiatCurrencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>totalFeePct<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>totalFeeBase<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>totalFeeMin<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Fee breakdown returned with payin bank details. Mirrors connect-api's <code class="lang-kotlin">NoahFeeDetails</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-222332233%2FClasslikes%2F1908257177" anchor-label="NoahFiatOption" id="-222332233%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-fiat-option/index.html"><span>Noah</span><wbr></wbr><span>Fiat</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-222332233%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-fiat-option/index.html">NoahFiatOption</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>fiatCurrencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A fiat option offered to the customer during KYC.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1008045137%2FClasslikes%2F1908257177" anchor-label="NoahFormMetadata" id="-1008045137%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-form-metadata/index.html"><span>Noah</span><wbr></wbr><span>Form</span><wbr></wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1008045137%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-form-metadata/index.html">NoahFormMetadata</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>contentHash<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Metadata describing the schema content for a Noah form (channel-form or channel inline form).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2090381185%2FClasslikes%2F1908257177" anchor-label="NoahFormNextStep" id="-2090381185%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-form-next-step/index.html"><span>Noah</span><wbr></wbr><span>Form</span><wbr></wbr><span>Next</span><wbr></wbr><span><span>Step</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2090381185%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-form-next-step/index.html">NoahFormNextStep</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>stepId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>stepType<span class="token operator">: </span><a href="-noah-form-next-step-type/index.html">NoahFormNextStepType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>schema<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Next step in a Noah multi-step form flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1541279589%2FClasslikes%2F1908257177" anchor-label="NoahFormNextStepType" id="1541279589%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-form-next-step-type/index.html"><span>Noah</span><wbr></wbr><span>Form</span><wbr></wbr><span>Next</span><wbr></wbr><span>Step</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1541279589%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-noah-form-next-step-type/index.html">NoahFormNextStepType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-noah-form-next-step-type/index.html">NoahFormNextStepType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Type of a Noah form step.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1635949076%2FClasslikes%2F1908257177" anchor-label="NoahGetPaymentMethodsData" id="1635949076%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payment-methods-data/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Methods</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1635949076%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payment-methods-data/index.html">NoahGetPaymentMethodsData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>paymentMethods<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-payment-method/index.html">NoahPaymentMethod</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payment-methods payload with optional pagination cursor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1896411925%2FClasslikes%2F1908257177" anchor-label="NoahGetPaymentMethodsRequest" id="1896411925%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payment-methods-request/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Methods</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1896411925%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payment-methods-request/index.html">NoahGetPaymentMethodsRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>pageSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>capability<span class="token operator">: </span><a href="-noah-payment-method-capability/index.html">NoahPaymentMethodCapability</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Query parameters for <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/payment-methods</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1736969949%2FClasslikes%2F1908257177" anchor-label="NoahGetPaymentMethodsResponse" id="1736969949%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payment-methods-response/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Methods</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1736969949%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payment-methods-response/index.html">NoahGetPaymentMethodsResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-get-payment-methods-data/index.html">NoahGetPaymentMethodsData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/payment-methods</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-317496307%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutChannelFormData" id="-317496307%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-channel-form-data/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Channel</span><wbr></wbr><span>Form</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-317496307%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-channel-form-data/index.html">NoahGetPayoutChannelFormData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>formSchema<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>formMetadata<span class="token operator">: </span><a href="-noah-form-metadata/index.html">NoahFormMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Form schema describing the inputs required to request a quote for a given payout channel.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-918473642%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutChannelFormResponse" id="-918473642%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-channel-form-response/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Channel</span><wbr></wbr><span>Form</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-918473642%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-channel-form-response/index.html">NoahGetPayoutChannelFormResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-get-payout-channel-form-data/index.html">NoahGetPayoutChannelFormData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/channels/{channelId}/form</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1516657270%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutChannelsData" id="-1516657270%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-channels-data/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Channels</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1516657270%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-channels-data/index.html">NoahGetPayoutChannelsData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-channel/index.html">NoahChannel</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payout channels payload with optional pagination cursor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="650619871%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutChannelsRequest" id="650619871%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-channels-request/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Channels</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="650619871%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-channels-request/index.html">NoahGetPayoutChannelsRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Query parameters for <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/channels</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1772121939%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutChannelsResponse" id="1772121939%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-channels-response/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Channels</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1772121939%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-channels-response/index.html">NoahGetPayoutChannelsResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-get-payout-channels-data/index.html">NoahGetPayoutChannelsData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/channels</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1855153184%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutCountriesData" id="1855153184%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-countries-data/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Countries</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1855153184%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-countries-data/index.html">NoahGetPayoutCountriesData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>countries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payload mapping ISO-3166 country code -> list of fiat currency codes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1949502743%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutCountriesResponse" id="-1949502743%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-countries-response/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Countries</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1949502743%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-countries-response/index.html">NoahGetPayoutCountriesResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-get-payout-countries-data/index.html">NoahGetPayoutCountriesData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">GET /api/v3/clients/me/integrations/noah/payouts/countries</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1735529432%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutQuoteData" id="1735529432%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-quote-data/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Quote</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1735529432%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-quote-data/index.html">NoahGetPayoutQuoteData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>payoutId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>totalFee<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoAmountEstimate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoAuthorizedAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>formSessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rate<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>breakdown<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-transaction-breakdown-item/index.html">NoahTransactionBreakdownItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>quote<span class="token operator">: </span><a href="-noah-sell-quote/index.html">NoahSellQuote</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextStep<span class="token operator">: </span><a href="-noah-form-next-step/index.html">NoahFormNextStep</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payout quote payload. May embed a <a href="-noah-get-payout-quote-data/next-step.html">nextStep</a> when the multi-step form flow has more screens to collect from the user before <a href="-noah-initiate-payout-request/index.html">NoahInitiatePayoutRequest</a> can be sent.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="672395985%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutQuoteRequest" id="672395985%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-quote-request/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Quote</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="672395985%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-quote-request/index.html">NoahGetPayoutQuoteRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>channelId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>quoted<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>form<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>formSessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>businessFee<span class="token operator">: </span><a href="-noah-business-fee/index.html">NoahBusinessFee</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Request body for <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payouts/quote</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1847785823%2FClasslikes%2F1908257177" anchor-label="NoahGetPayoutQuoteResponse" id="-1847785823%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-get-payout-quote-response/index.html"><span>Noah</span><wbr></wbr><span>Get</span><wbr></wbr><span>Payout</span><wbr></wbr><span>Quote</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1847785823%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-get-payout-quote-response/index.html">NoahGetPayoutQuoteResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-get-payout-quote-data/index.html">NoahGetPayoutQuoteData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payouts/quote</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1256144902%2FClasslikes%2F1908257177" anchor-label="NoahInitiateKycData" id="-1256144902%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-kyc-data/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Kyc</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1256144902%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-kyc-data/index.html">NoahInitiateKycData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>hostedUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful KYC initiation payload containing the URL the client should redirect the end user to in order to complete the hosted KYC flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="568671087%2FClasslikes%2F1908257177" anchor-label="NoahInitiateKycRequest" id="568671087%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-kyc-request/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Kyc</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568671087%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-kyc-request/index.html">NoahInitiateKycRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>returnUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-fiat-option/index.html">NoahFiatOption</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>customerType<span class="token operator">: </span><a href="-noah-customer-type/index.html">NoahCustomerType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>form<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Request body for <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/customers/kyc</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-768290365%2FClasslikes%2F1908257177" anchor-label="NoahInitiateKycResponse" id="-768290365%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-kyc-response/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Kyc</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-768290365%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-kyc-response/index.html">NoahInitiateKycResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-initiate-kyc-data/index.html">NoahInitiateKycData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/customers/kyc</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-700773918%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayinData" id="-700773918%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payin-data/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-700773918%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payin-data/index.html">NoahInitiatePayinData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>payinId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankDetails<span class="token operator">: </span><a href="-noah-bank-details/index.html">NoahBankDetails</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payin initiation payload containing the payin id and the bank details the end user should fund.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1411631239%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayinRequest" id="1411631239%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payin-request/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1411631239%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payin-request/index.html">NoahInitiatePayinRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cryptoCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>destinationAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>businessFees<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-noah-business-fee/index.html">NoahBusinessFee</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Request body for <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payins</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-406329429%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayinResponse" id="-406329429%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payin-response/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-406329429%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payin-response/index.html">NoahInitiatePayinResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-initiate-payin-data/index.html">NoahInitiatePayinData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payins</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1650167257%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayoutData" id="1650167257%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payout-data/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payout</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1650167257%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payout-data/index.html">NoahInitiatePayoutData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>destinationAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-deposit-source-trigger-condition/index.html">NoahDepositSourceTriggerCondition</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ruleId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful payout initiation payload.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="268479792%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayoutRequest" id="268479792%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payout-request/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payout</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="268479792%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payout-request/index.html">NoahInitiatePayoutRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>payoutId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sourceAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nonce<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>trigger<span class="token operator">: </span><a href="-noah-onchain-deposit-source-trigger/index.html">NoahOnchainDepositSourceTrigger</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>businessFee<span class="token operator">: </span><a href="-noah-business-fee/index.html">NoahBusinessFee</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Request body for <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payouts</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1484285918%2FClasslikes%2F1908257177" anchor-label="NoahInitiatePayoutResponse" id="-1484285918%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-initiate-payout-response/index.html"><span>Noah</span><wbr></wbr><span>Initiate</span><wbr></wbr><span>Payout</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1484285918%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-initiate-payout-response/index.html">NoahInitiatePayoutResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-initiate-payout-data/index.html">NoahInitiatePayoutData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payouts</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-470036233%2FClasslikes%2F1908257177" anchor-label="NoahIssuerDetails" id="-470036233%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-issuer-details/index.html"><span>Noah</span><wbr></wbr><span>Issuer</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-470036233%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-issuer-details/index.html">NoahIssuerDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Information about the issuer (e.g. bank) of a Noah payment method.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-898697486%2FClasslikes%2F1908257177" anchor-label="NoahNetwork" id="-898697486%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-network/index.html"><span>Noah</span><wbr></wbr><span><span>Network</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-898697486%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-noah-network/index.html">NoahNetwork</a></div><div class="brief "><p class="paragraph">Convenience constants for the CAIP-2 chain IDs that connect-api accepts in Noah <code class="lang-kotlin">network</code> parameters.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1775029036%2FClasslikes%2F1908257177" anchor-label="NoahNetworkOnlyOnchainDepositSourceTriggerCondition" id="1775029036%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-network-only-onchain-deposit-source-trigger-condition/index.html"><span>Noah</span><wbr></wbr><span>Network</span><wbr></wbr><span>Only</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Condition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1775029036%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-network-only-onchain-deposit-source-trigger-condition/index.html">NoahNetworkOnlyOnchainDepositSourceTriggerCondition</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Per-condition entry used inside permanent/quoted triggers. Unlike the single trigger, these conditions only constrain the network (no amount conditions). JSON keys use PascalCase to match the Noah API wire format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-562712449%2FClasslikes%2F1908257177" anchor-label="NoahOnchainDepositSourceTrigger" id="-562712449%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-onchain-deposit-source-trigger/index.html"><span>Noah</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Trigger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-562712449%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-noah-onchain-deposit-source-trigger/index.html">NoahOnchainDepositSourceTrigger</a></div><div class="brief "><p class="paragraph">The three Noah on-chain deposit source trigger variants accepted by <code class="lang-kotlin">POST /payouts</code>. The wire shape is discriminated by the PascalCase <code class="lang-kotlin">Type</code> field. Gson serializes the concrete runtime variant (including its <span data-unresolved-link="com.google.gson.annotations/SerializedName///PointingToDeclaration/">SerializedName</span> fields), so passing any implementation produces the correct JSON body.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-264829575%2FClasslikes%2F1908257177" anchor-label="NoahPaymentMethod" id="-264829575%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-payment-method/index.html"><span>Noah</span><wbr></wbr><span>Payment</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264829575%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-payment-method/index.html">NoahPaymentMethod</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethodCategory<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>displayDetails<span class="token operator">: </span><a href="-noah-payment-method-display-details/index.html">NoahPaymentMethodDisplayDetails</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>customerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>capabilities<span class="token operator">: </span><a href="-noah-payment-method-capabilities/index.html">NoahPaymentMethodCapabilities</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountHolderDetails<span class="token operator">: </span><a href="-noah-account-holder-details/index.html">NoahAccountHolderDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>issuerDetails<span class="token operator">: </span><a href="-noah-issuer-details/index.html">NoahIssuerDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A saved Noah payment method available to the current customer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-298659229%2FClasslikes%2F1908257177" anchor-label="NoahPaymentMethodCapabilities" id="-298659229%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-payment-method-capabilities/index.html"><span>Noah</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Method</span><wbr></wbr><span><span>Capabilities</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-298659229%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-payment-method-capabilities/index.html">NoahPaymentMethodCapabilities</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>payoutFrom<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>payinTo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>payoutTo<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Per-payment-method capability flags (which Noah flows the method can be used in).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-939796159%2FClasslikes%2F1908257177" anchor-label="NoahPaymentMethodCapability" id="-939796159%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-payment-method-capability/index.html"><span>Noah</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Method</span><wbr></wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-939796159%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-noah-payment-method-capability/index.html">NoahPaymentMethodCapability</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-noah-payment-method-capability/index.html">NoahPaymentMethodCapability</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Capability filter accepted by the <code class="lang-kotlin">getPaymentMethods</code> request. Validated by <code class="lang-kotlin">isNoahPaymentMethodCapability</code> in connect-api.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1877741625%2FClasslikes%2F1908257177" anchor-label="NoahPaymentMethodDisplayDetails" id="1877741625%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-payment-method-display-details/index.html"><span>Noah</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Method</span><wbr></wbr><span>Display</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1877741625%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-payment-method-display-details/index.html">NoahPaymentMethodDisplayDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bankAddress<span class="token operator">: </span><a href="-noah-bank-address/index.html">NoahBankAddress</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>last4<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>scheme<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>identifierType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>identifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Per-method display details (bank/card/identifier shapes flattened by the BFF).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-271183127%2FClasslikes%2F1908257177" anchor-label="NoahPermanentOnchainDepositSourceTriggerInput" id="-271183127%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-permanent-onchain-deposit-source-trigger-input/index.html"><span>Noah</span><wbr></wbr><span>Permanent</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-271183127%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-permanent-onchain-deposit-source-trigger-input/index.html">NoahPermanentOnchainDepositSourceTriggerInput</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;PermanentOnchainDepositSourceTriggerInput&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-network-only-onchain-deposit-source-trigger-condition/index.html">NoahNetworkOnlyOnchainDepositSourceTriggerCondition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sourceAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nonce<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>networkAgnostic<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-noah-onchain-deposit-source-trigger/index.html">NoahOnchainDepositSourceTrigger</a></div><div class="brief "><p class="paragraph">Trigger that keeps a payout source active across multiple deposits (until expiry), rather than for a single matching amount. JSON keys use PascalCase to match the Noah API wire format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1173397794%2FClasslikes%2F1908257177" anchor-label="NoahPersonName" id="1173397794%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-person-name/index.html"><span>Noah</span><wbr></wbr><span>Person</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1173397794%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-person-name/index.html">NoahPersonName</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>firstName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>middleName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A person's name as a structured object, mirroring the shape Noah uses for account-holder names (<code class="lang-kotlin">FirstName</code> / <code class="lang-kotlin">LastName</code> / optional <code class="lang-kotlin">MiddleName</code>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-982617359%2FClasslikes%2F1908257177" anchor-label="NoahQuotedOnchainDepositSourceTriggerInput" id="-982617359%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-quoted-onchain-deposit-source-trigger-input/index.html"><span>Noah</span><wbr></wbr><span>Quoted</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-982617359%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-quoted-onchain-deposit-source-trigger-input/index.html">NoahQuotedOnchainDepositSourceTriggerInput</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;QuotedOnchainDepositSourceTriggerInput&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>signedQuote<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-network-only-onchain-deposit-source-trigger-condition/index.html">NoahNetworkOnlyOnchainDepositSourceTriggerCondition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sourceAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nonce<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-noah-onchain-deposit-source-trigger/index.html">NoahOnchainDepositSourceTrigger</a></div><div class="brief "><p class="paragraph">Trigger backed by a signed quote (rate-locked payout). Requires the <code class="lang-kotlin">SignedQuote</code> obtained from a <code class="lang-kotlin">getPayoutQuote</code> call made with <code class="lang-kotlin">quoted = true</code>. JSON keys use PascalCase to match the Noah API wire format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1579643054%2FClasslikes%2F1908257177" anchor-label="NoahResponseMetadata" id="-1579643054%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-response-metadata/index.html"><span>Noah</span><wbr></wbr><span>Response</span><wbr></wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1579643054%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator"> = </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Response envelope metadata returned by connect-api alongside <code class="lang-kotlin">data</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1537796458%2FClasslikes%2F1908257177" anchor-label="NoahSellQuote" id="-1537796458%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-sell-quote/index.html"><span>Noah</span><wbr></wbr><span>Sell</span><wbr></wbr><span><span>Quote</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1537796458%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-sell-quote/index.html">NoahSellQuote</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>signedQuote<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A signed payout quote that can be used to lock in a rate.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1434528083%2FClasslikes%2F1908257177" anchor-label="NoahSimulatePayinData" id="-1434528083%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-simulate-payin-data/index.html"><span>Noah</span><wbr></wbr><span>Simulate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1434528083%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-simulate-payin-data/index.html">NoahSimulatePayinData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>fiatDepositId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reference<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Successful simulated payin payload containing the synthetic deposit id Noah created on the client's behalf.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-770128932%2FClasslikes%2F1908257177" anchor-label="NoahSimulatePayinRequest" id="-770128932%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-simulate-payin-request/index.html"><span>Noah</span><wbr></wbr><span>Simulate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-770128932%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-simulate-payin-request/index.html">NoahSimulatePayinRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>paymentMethodId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatAmount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fiatCurrency<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Request body for <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payins/simulate</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="678582006%2FClasslikes%2F1908257177" anchor-label="NoahSimulatePayinResponse" id="678582006%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-simulate-payin-response/index.html"><span>Noah</span><wbr></wbr><span>Simulate</span><wbr></wbr><span>Payin</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="678582006%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-simulate-payin-response/index.html">NoahSimulatePayinResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-noah-simulate-payin-data/index.html">NoahSimulatePayinData</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="-noah-response-metadata/index.html">NoahResponseMetadata</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Response from <code class="lang-kotlin">POST /api/v3/clients/me/integrations/noah/payins/simulate</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1752698328%2FClasslikes%2F1908257177" anchor-label="NoahSingleOnchainDepositSourceTriggerAmountCondition" id="1752698328%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-single-onchain-deposit-source-trigger-amount-condition/index.html"><span>Noah</span><wbr></wbr><span>Single</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span>Amount</span><wbr></wbr><span><span>Condition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1752698328%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-single-onchain-deposit-source-trigger-amount-condition/index.html">NoahSingleOnchainDepositSourceTriggerAmountCondition</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>comparisonOperator<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Amount condition entry used inside <a href="-noah-single-onchain-deposit-source-trigger-input/index.html">NoahSingleOnchainDepositSourceTriggerInput</a>. JSON keys use PascalCase to match the Noah API wire format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-240611616%2FClasslikes%2F1908257177" anchor-label="NoahSingleOnchainDepositSourceTriggerCondition" id="-240611616%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-single-onchain-deposit-source-trigger-condition/index.html"><span>Noah</span><wbr></wbr><span>Single</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Condition</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-240611616%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-single-onchain-deposit-source-trigger-condition/index.html">NoahSingleOnchainDepositSourceTriggerCondition</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>amountConditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-single-onchain-deposit-source-trigger-amount-condition/index.html">NoahSingleOnchainDepositSourceTriggerAmountCondition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>network<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Per-condition entry used inside <a href="-noah-single-onchain-deposit-source-trigger-input/index.html">NoahSingleOnchainDepositSourceTriggerInput</a>. JSON keys use PascalCase to match the Noah API wire format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1294009327%2FClasslikes%2F1908257177" anchor-label="NoahSingleOnchainDepositSourceTriggerInput" id="-1294009327%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-single-onchain-deposit-source-trigger-input/index.html"><span>Noah</span><wbr></wbr><span>Single</span><wbr></wbr><span>Onchain</span><wbr></wbr><span>Deposit</span><wbr></wbr><span>Source</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1294009327%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-single-onchain-deposit-source-trigger-input/index.html">NoahSingleOnchainDepositSourceTriggerInput</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;SingleOnchainDepositSourceTriggerInput&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>conditions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-noah-single-onchain-deposit-source-trigger-condition/index.html">NoahSingleOnchainDepositSourceTriggerCondition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sourceAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nonce<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-noah-onchain-deposit-source-trigger/index.html">NoahOnchainDepositSourceTrigger</a></div><div class="brief "><p class="paragraph">Signed payout trigger describing a single on-chain deposit source.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2032734476%2FClasslikes%2F1908257177" anchor-label="NoahTransactionBreakdownItem" id="2032734476%2FClasslikes%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-noah-transaction-breakdown-item/index.html"><span>Noah</span><wbr></wbr><span>Transaction</span><wbr></wbr><span>Breakdown</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2032734476%2FClasslikes%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-noah-transaction-breakdown-item/index.html">NoahTransactionBreakdownItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>amount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A single line item in a payout quote fee breakdown.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) Portal</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
