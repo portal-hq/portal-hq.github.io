@@ -108,24 +108,24 @@
   <div class="breadcrumbs"><a href="../../../index.html">Portal Android SDK</a><span class="delimiter">/</span><a href="../index.html">io.portalhq.android.yield</a><span class="delimiter">/</span><span class="current">YieldXyz</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Yield</span><wbr></wbr><span><span>Xyz</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">YieldXyz</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../io.portalhq.android.api/-yield-xyz-api/index.html">YieldXyzApi</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">YieldXyz provider implementation for discovering and managing yield opportunities.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">YieldXyz</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../io.portalhq.android.api/-yield-xyz-api/index.html">YieldXyzApi</a><span class="token punctuation">, </span></span><span class="parameter ">portal<span class="token operator">: </span><a href="../-yield-xyz-portal-dependency/index.html">YieldXyzPortalDependency</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">YieldXyz provider implementation for discovering and managing yield opportunities.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>api</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The low-level Yield.xyz API client.</p></div></div></div></div><div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>portal</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The Portal dependency used by high-level <a href="deposit.html">deposit</a>/<a href="withdraw.html">withdraw</a> for signing, address resolution and confirmation. May be <code class="lang-kotlin">null</code> when only the low-level API is used.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-459827432%2FConstructors%2F1908257177" anchor-label="YieldXyz" id="-459827432%2FConstructors%2F1908257177" data-filterable-set=":portal-android/release"></a>
+        <div class="table"><a data-name="-952120784%2FConstructors%2F1908257177" anchor-label="YieldXyz" id="-952120784%2FConstructors%2F1908257177" data-filterable-set=":portal-android/release"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-yield-xyz.html"><span>Yield</span><wbr></wbr><span><span>Xyz</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-459827432%2FConstructors%2F1908257177"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-952120784%2FConstructors%2F1908257177"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../io.portalhq.android.api/-yield-xyz-api/index.html">YieldXyzApi</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">api<span class="token operator">: </span><a href="../../io.portalhq.android.api/-yield-xyz-api/index.html">YieldXyzApi</a><span class="token punctuation">, </span></span><span class="parameter ">portal<span class="token operator">: </span><a href="../-yield-xyz-portal-dependency/index.html">YieldXyzPortalDependency</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -134,7 +134,22 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-1450139455%2FFunctions%2F1908257177" anchor-label="discover" id="-1450139455%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+        <div class="table"><a data-name="53391062%2FFunctions%2F1908257177" anchor-label="deposit" id="53391062%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="deposit.html"><span><span>deposit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53391062%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="deposit.html"><span class="token function">deposit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">params<span class="token operator">: </span><a href="../-yield-deposit-params/index.html">YieldDepositParams</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-yield-submit-options/index.html">YieldSubmitOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="../-yield-deposit-result/index.html">YieldDepositResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">High-level deposit: resolves the yield, builds enter transactions, signs and submits each transaction sequentially, waits for confirmation, and tracks each hash.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1450139455%2FFunctions%2F1908257177" anchor-label="discover" id="-1450139455%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
           <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -224,6 +239,21 @@
               </div>
             </div>
           </div>
+<a data-name="-1659993523%2FFunctions%2F1908257177" anchor-label="getValidators" id="-1659993523%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-validators.html"><span>get</span><wbr></wbr><span><span>Validators</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1659993523%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-validators.html"><span class="token function">getValidators</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">yieldId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../io.portalhq.android.api.data.yieldxyz/-yield-xyz-validator/index.html">YieldXyzValidator</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns the available validators for a native-staking yield.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-505692718%2FFunctions%2F1908257177" anchor-label="manage" id="-505692718%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
           <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
             <div class="main-subrow keyValue ">
@@ -250,6 +280,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="track.html"><span class="token function">track</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">txHash<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Tracks a transaction by submitting its hash to the Yield.xyz integration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1163434600%2FFunctions%2F1908257177" anchor-label="withdraw" id="1163434600%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="withdraw.html"><span><span>withdraw</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1163434600%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="withdraw.html"><span class="token function">withdraw</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">params<span class="token operator">: </span><a href="../-yield-withdraw-params/index.html">YieldWithdrawParams</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../-yield-submit-options/index.html">YieldSubmitOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="../-yield-withdraw-result/index.html">YieldWithdrawResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">High-level withdraw; same parameters and behavior as <a href="deposit.html">deposit</a>.</p></div></div></div>
                 </div>
               </div>
             </div>

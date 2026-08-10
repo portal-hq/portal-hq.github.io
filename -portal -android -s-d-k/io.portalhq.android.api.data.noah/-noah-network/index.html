@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NoahNetwork</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Portal Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":portal-android/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":portal-android/release"
+                                       data-filter=":portal-android/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Portal Android SDK
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Portal Android SDK::io.portalhq.android.api.data.noah/NoahNetwork///PointingToDeclaration//1908257177">
+  <div class="breadcrumbs"><a href="../../../index.html">Portal Android SDK</a><span class="delimiter">/</span><a href="../index.html">io.portalhq.android.api.data.noah</a><span class="delimiter">/</span><span class="current">NoahNetwork</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Noah</span><wbr></wbr><span><span>Network</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">NoahNetwork</a></div><p class="paragraph">Convenience constants for the CAIP-2 chain IDs that connect-api accepts in Noah <code class="lang-kotlin">network</code> parameters.</p><p class="paragraph">Only chains present in connect-api's <code class="lang-kotlin">CAIP2_TO_NOAH_NETWORK</code> map are included. Passing any other value will be rejected with <code class="lang-kotlin">Unsupported network for Noah integration</code>.</p><p class="paragraph">The BFF validates these via the <code class="lang-kotlin">[namespace]:[reference]</code> regex and then translates them into Noah's internal network strings (e.g. <code class="lang-kotlin">&quot;eip155:1&quot;</code> -><code class="lang-kotlin">&quot;Ethereum&quot;</code>). Passing a non-CAIP-2 value (e.g. <code class="lang-kotlin">&quot;ethereum&quot;</code>) will be rejected with <code class="lang-kotlin">Network must be a &quot;[namespace]:[reference]&quot;</code>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-859212772%2FProperties%2F1908257177" anchor-label="BASE" id="-859212772%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-a-s-e.html"><span><span>BASE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-859212772%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-a-s-e.html">BASE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Base mainnet — <code class="lang-kotlin">eip155:8453</code> -> Noah <code class="lang-kotlin">&quot;Base&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1396224024%2FProperties%2F1908257177" anchor-label="BASE_SEPOLIA" id="-1396224024%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-a-s-e_-s-e-p-o-l-i-a.html"><span>BASE_</span><wbr></wbr><span>SEPOLIA</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1396224024%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-a-s-e_-s-e-p-o-l-i-a.html">BASE_SEPOLIA</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Base Sepolia testnet — <code class="lang-kotlin">eip155:84532</code> -> Noah <code class="lang-kotlin">&quot;BaseTestSepolia&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-840023626%2FProperties%2F1908257177" anchor-label="ETHEREUM" id="-840023626%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-t-h-e-r-e-u-m.html"><span><span>ETHEREUM</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-840023626%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-e-t-h-e-r-e-u-m.html">ETHEREUM</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Ethereum mainnet — <code class="lang-kotlin">eip155:1</code> -> Noah <code class="lang-kotlin">&quot;Ethereum&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1207559042%2FProperties%2F1908257177" anchor-label="ETHEREUM_SEPOLIA" id="1207559042%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-t-h-e-r-e-u-m_-s-e-p-o-l-i-a.html"><span>ETHEREUM_</span><wbr></wbr><span>SEPOLIA</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1207559042%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-e-t-h-e-r-e-u-m_-s-e-p-o-l-i-a.html">ETHEREUM_SEPOLIA</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Ethereum Sepolia testnet — <code class="lang-kotlin">eip155:11155111</code> -> Noah <code class="lang-kotlin">&quot;EthereumTestSepolia&quot;</code>. Use with sandbox-only test assets such as <code class="lang-kotlin">USDC_TEST</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1062598664%2FProperties%2F1908257177" anchor-label="GNOSIS" id="-1062598664%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-n-o-s-i-s.html"><span><span>GNOSIS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1062598664%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-g-n-o-s-i-s.html">GNOSIS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Gnosis mainnet — <code class="lang-kotlin">eip155:100</code> -> Noah <code class="lang-kotlin">&quot;Gnosis&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-452289957%2FProperties%2F1908257177" anchor-label="GNOSIS_CHIADO" id="-452289957%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-n-o-s-i-s_-c-h-i-a-d-o.html"><span>GNOSIS_</span><wbr></wbr><span>CHIADO</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-452289957%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-g-n-o-s-i-s_-c-h-i-a-d-o.html">GNOSIS_CHIADO</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Gnosis Chiado testnet — <code class="lang-kotlin">eip155:10200</code> -> Noah <code class="lang-kotlin">&quot;GnosisTestChiado&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2065115091%2FProperties%2F1908257177" anchor-label="POLYGON" id="2065115091%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-l-y-g-o-n.html"><span><span>POLYGON</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2065115091%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-p-o-l-y-g-o-n.html">POLYGON</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Polygon PoS mainnet — <code class="lang-kotlin">eip155:137</code> -> Noah <code class="lang-kotlin">&quot;PolygonPos&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="503528210%2FProperties%2F1908257177" anchor-label="POLYGON_AMOY" id="503528210%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-l-y-g-o-n_-a-m-o-y.html"><span>POLYGON_</span><wbr></wbr><span>AMOY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="503528210%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-p-o-l-y-g-o-n_-a-m-o-y.html">POLYGON_AMOY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Polygon Amoy testnet — <code class="lang-kotlin">eip155:80002</code> -> Noah <code class="lang-kotlin">&quot;PolygonTestAmoy&quot;</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1324048393%2FProperties%2F1908257177" anchor-label="SOLANA" id="1324048393%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-l-a-n-a.html"><span><span>SOLANA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1324048393%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-o-l-a-n-a.html">SOLANA</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Solana mainnet — <code class="lang-kotlin">solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp</code> -> Noah <code class="lang-kotlin">&quot;Solana&quot;</code>. Equivalent to <code class="lang-kotlin">solana:mainnet</code> on the BFF.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-232215222%2FProperties%2F1908257177" anchor-label="SOLANA_DEVNET" id="-232215222%2FProperties%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-l-a-n-a_-d-e-v-n-e-t.html"><span>SOLANA_</span><wbr></wbr><span>DEVNET</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-232215222%2FProperties%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-o-l-a-n-a_-d-e-v-n-e-t.html">SOLANA_DEVNET</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Solana devnet — <code class="lang-kotlin">solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1</code> -> Noah <code class="lang-kotlin">&quot;SolanaDevnet&quot;</code>. Equivalent to <code class="lang-kotlin">solana:devnet</code> on the BFF.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) Portal</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

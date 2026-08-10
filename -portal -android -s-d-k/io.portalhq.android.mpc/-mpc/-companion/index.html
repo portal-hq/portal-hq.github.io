@@ -111,8 +111,28 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"></div>
-    <div class="tabs-section-body"></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-258548307%2FFunctions%2F1908257177" anchor-label="isRetryableServerError" id="-258548307%2FFunctions%2F1908257177" data-filterable-set=":portal-android/release"></a>
+          <div class="table-row" data-filterable-current=":portal-android/release" data-filterable-set=":portal-android/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-retryable-server-error.html"><span>is</span><wbr></wbr><span>Retryable</span><wbr></wbr><span>Server</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-258548307%2FFunctions%2F1908257177"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":portal-android/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-retryable-server-error.html"><span class="token function">isRetryableServerError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">error<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Reports whether an error from the pre-generated wallet API is a server-side (5xx) failure — the only case where we fall back to the on-device binary DKG flow, since a 5xx is transient and safe to retry. Every other failure (4xx client errors such as the enclave &quot;wallet already exists&quot; rejection, auth failures, transport/IO errors, and share decode/validation failures) is surfaced immediately, because a binary retry would not resolve it and would only add a full DKG round of latency.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
     <div class="footer">
